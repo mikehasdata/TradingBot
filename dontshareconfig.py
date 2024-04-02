@@ -1,2 +1,0 @@
-api_key = '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'
-sniper_key ='b66e6631542c4541b66d910a167e1a23'
