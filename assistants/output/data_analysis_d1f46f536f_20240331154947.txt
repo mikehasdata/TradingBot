@@ -1,0 +1,31 @@
+The trading strategy presented in the transcript revolves around using the Relative Strength Index (RSI) more effectively by adjusting settings and confirmation with price action and multiple time frames. The key points of this strategy are as follows:
+
+1. Adjust the RSI settings from the default of 70/30 for overbought/oversold levels to 80/20. This aims to provide fewer but more reliable signals.
+2. Confirm RSI signals with multiple time frames. Only enter trades where there is confirmation from higher time frames (e.g., signals on both the hourly and daily charts).
+3. Use price action for further confirmation before entering trades.
+4. Utilize the RSI for identifying pullbacks in a strong trend.
+5. Combine RSI with other price action strategies for better results.
+
+Let's breakdown the steps in this strategy:
+
+### RSI Adjustment and Multi-Timeframe Confirmation
+- Set RSI overbought level to 80 and oversold level to 20.
+- For a trade signal, confirm that the same RSI signal occurs on multiple time frames, from shorter to longer (e.g., 1-minute, 5-minute, and 15-minute).
+
+### Price Action Confirmation for Entry
+- Look for price action patterns such as a double bar break.
+- Enter a trade when the price breaks the low of confirming bars, with the RSI also indicating a potential reversal.
+
+### Trade Management
+- Set the initial stop loss above the confirmation bar.
+- Take partial profits when the price reaches the midline of the RSI.
+- Take the remainder of the profits when the price reaches the volume-weighted average price (VWAP).
+
+### RSI Used for Identifying Strength in Trends
+- In strong uptrends, look for the RSI to remain between 50 and 80. Enter trades when the RSI touches the midline, expecting a pullback and then a bounce higher.
+- In strong downtrends, do the opposite: look for the RSI between 20 and 50, and enter trades on pullbacks to the midline.
+
+### Combined with Price Action Strategies
+- Pair the RSI strategy with other price action techniques to increase the probability of successful trades.
+
+Shall I proceed to code this strategy in Python? Please note that we would require historical price and RSI data for testing and executing the strategy.

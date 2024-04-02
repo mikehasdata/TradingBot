@@ -1,0 +1,30 @@
+Based on the YouTube transcript, the trading strategy revolves around recognizing RSI divergence in combination with moving average analysis for scalp trading, particularly in a downtrend. Here's a summary of the strategy:
+
+1. Look for a strong downtrend where the price action is creating consistently lower lows and lower highs. During a downtrend, the Relative Strength Index (RSI) typically also forms lower lows matching the price action.
+
+2. Use moving averages as an indication of the trend and a reference point for potential reversals. The strategy uses three moving averages: 21-period, 50-period, and 200-period.
+
+3. Identify a divergence by observing when the RSI starts to form higher lows while the price continues to make lower lows. This suggests a weakening of the downtrend and a possible upcoming reversal.
+
+4. Wait for the RSI divergence to be extremely clear. Specifically, look for multiple instances of higher lows on RSI, signaling growing bullish momentum.
+
+5. Confirm bullish momentum when the RSI breaks above the 50 level.
+
+6. Consider entering a long (buy) position when the RSI shows clear divergence and the price action shows signs of reversal such as a hammer candlestick or a break above a resistance level. In this case, the entry point mentioned was 32,372.
+
+7. Target the 21-period moving average as a potential take-profit level, particularly if it aligns with a psychological price level, in this case, just below 32,500.
+
+8. Keep the trade duration short as this is a scalp trade. The trader in the video opts to take profits quickly rather than waiting for a larger move.
+
+9. Perform detailed analysis on a higher timeframe (e.g., 15-minute chart) to understand the broader market situation and then switch to a shorter timeframe (e.g., 1-minute chart) for precise entry points.
+
+Before implementing this strategy, it's important to backtest it and consider risk management tactics, such as setting stop-loss orders to minimize potential losses. It's also advisable to paper trade or use a demo account to get accustomed to the strategy without financial risk.
+
+Now let's start by setting up Python code to identify RSI divergence and then we can move on to managing entries and exits based on the strategy:
+
+1. Calculate the RSI.
+2. Identify divergence between price lows and RSI lows.
+3. Identify the significant moving averages.
+4. Find potential entry points when divergence is confirmed and RSI crosses above 50.
+
+Would you like to proceed with setting up the code and backtesting this strategy?

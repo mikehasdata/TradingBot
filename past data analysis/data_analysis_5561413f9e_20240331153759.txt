@@ -1,0 +1,28 @@
+Based on the provided YouTube transcript, we want to create a trading strategy that incorporates the Relative Strength Index (RSI) with modified settings, multi-timeframe analysis, and price action confirmation. Here's a summary of the strategy rules:
+
+1. Adjust the RSI settings to an overbought level of 80 and an oversold level of 20 to create stronger signals.
+2. Use multiple timeframes for confirmation:
+   - Verify an RSI signal on a shorter timeframe (e.g., 1-minute).
+   - Confirm it with the next higher timeframes (e.g., 5-minute and 15-minute).
+3. Look for price action confirmation:
+   - Identify hesitation patterns such as a double bar break (two candles showing signs of hesitancy, followed by a break below the low of these bars for a short, or above the high of these bars for a long).
+   - Enter the trade when price breaks the pattern's boundary.
+4. Set a stop loss above the high (for shorts) or below the low (for longs) of the pattern.
+5. Take partial profits when the RSI returns to the midline.
+6. Take remaining profits when the price reaches the VWAP (Volume Weighted Average Price).
+
+Additionally, the RSI can be used to find the strength of trends:
+- Determine if the market is trending.
+- For uptrends, the RSI should be between 50 and 80.
+- For downtrends, the RSI should be between 50 and 20.
+- Enter a long position when the RSI in an uptrend pulls back to the midline.
+- Enter a short position when the RSI in a downtrend pulls back to the midline.
+- Wait for price to bounce off the midline before entering the trade.
+
+To illustrate this strategy, we can implement it in Python using historical price data. We would need to:
+1. Calculate the RSI with the new settings (80 and 20).
+2. Implement multi-timeframe analysis for confirmation.
+3. Design a price action pattern detection (double bar break) function.
+4. Set up entry, stop loss, and take profit conditions.
+
+Shall we proceed with implementing this strategy in a Python code example using historical data?

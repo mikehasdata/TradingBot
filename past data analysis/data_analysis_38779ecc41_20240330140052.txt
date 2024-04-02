@@ -1,0 +1,28 @@
+The transcript provides a detailed trend-following trading strategy, which seems primarily focused on cryptocurrency trading but claims to be applicable to other markets as well. The steps outlined in the strategy can be summarized as follows:
+
+1. Analyze the market structure and trend direction using different time frames:
+   - Start with the **weekly time frame** to identify strong market structures and the general direction of the market, whether it's bullish or bearish.
+   - Drill down to the **daily time frame** to find the trend within that horizon.
+   - Look at the **four-hour time frame** next, which might show consolidation or sideways movement.
+   - For trade entries, focus on the **one-hour and fifteen-minute time frames**.
+
+2. Identify trends:
+   - An **uptrend** is signified by higher lows and higher highs.
+   - A **downtrend** is characterized by lower lows and lower highs.
+
+3. Determine the trend on higher time frames (weekly and daily) before considering trades. If the higher time frames show an uptrend, only consider long (buy) trades.
+
+4. On the one-hour time frame, look for bullish trends (as defined by higher lows and higher highs) to consider long entries, or bearish trends (lower highs and lower lows) for short entries.
+
+5. Use the fifteen-minute time frame to refine the entry point:
+   - Wait for the trend in the one-hour time frame to break in a specific direction (either up for long entries or down for short entries).
+   - Get into the trade when the trend breaks on the fifteen-minute chart in the expected direction of the one-hour trend.
+
+6. Set realistic stop losses and take profits:
+   - Use a simple risk-reward ratio, such as 1:2 or 1:3. If you're risking $500, aim to make at least $1000.
+   - Stop loss: place just above a previous high in a short trade or below a previous low in a long trade.
+   - Take profit: set above the previous low (for shorts) or below the previous high (for longs).
+   
+7. Once the trade moves in your favor, move the stop loss to the break-even point to avoid losses, and start taking profits as you hit your targets.
+
+To implement this strategy, I will help you codify the rules into an algorithm that can be backtested. This involves finding the trends and inflection points on the different time frames and defining rules for entering and exiting trades. Do you want to proceed with this approach, and do you have specific data (such as historical price data for a cryptocurrency) you wish to use for a backtest?

@@ -1,0 +1,61 @@
+Based on the YouTube transcript, here is a summary of the trading strategy using RSI:
+
+1. **Adjust RSI Settings**: Change the RSI levels from the default settings of 70 (overbought) and 30 (oversold) to 80 (overbought) and 20 (oversold) to receive stronger and more reliable signals.
+
+2. **Confirm with Multiple Time Frames**: Check the RSI signals across different time frames for confirmation. Only trade if the signal is present in both the shorter time frame (e.g., 1-hour) and a higher time frame (e.g., daily). For example, short the asset if it is in the overbought area (above 80) on both the 1-hour and daily charts.
+
+3. **Price Action Confirmation**: Before entering a trade, look for price action confirmation such as pattern breakouts or candlestick formations. For example, a bearish indication would be a double bar break pattern where price breaks the low of two bars showing signs of hesitation.
+
+4. **Partial Profits with VWAP**: Take partial profits when the price comes back to the midline of the RSI or reaches the VWAP indicator line, depending on the trade setup and the trader's discretion.
+
+5. **Use RSI for Pullback Strategy in Trends**: Look for strong trending markets where the RSI persists in either the upper quadrant (between 50 and 80) for uptrends or the lower quadrant (below 50 and 20) for downtrends. Enter trades on pullbacks to the RSI midline (50) in the direction of the trend, expecting a return to the trend direction.
+
+6. **Incorporate Price Action**: Pair the RSI strategy with price action signals to enhance trade quality and probability of success.
+
+7. **Trade Management**: Set stop losses above the recent high for short trades or below the recent low for long trades. Use a systematic approach to taking profits, either at RSI midline or other indicators like the VWAP, or based on a predefined risk-reward ratio.
+
+Now let's create a Python function that summarizes this strategy:
+
+```python
+import numpy as np
+import pandas as pd
+
+def rsi_strategy(data, period=14, rsi_low=20, rsi_high=80):
+    """
+    Trading strategy based on RSI with adjusted settings and price action confirmation.
+    
+    Parameters:
+    - data: pandas DataFrame with columns ['Open', 'High', 'Low', 'Close']
+    - period: the lookback period for calculating RSI
+    - rsi_low: the threshold for the oversold area
+    - rsi_high: the threshold for the overbought area
+    
+    Returns:
+    - DataFrame with RSI values and trading signals
+    """
+    
+    # Calculate relative strength index (RSI)
+    delta = data['Close'].diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+
+    # Identify signals
+    data['RSI'] = rsi
+    data['Long Signal'] = (rsi < rsi_low) & (rsi.shift(1) >= rsi_low)  # Enter long on crossover from below
+    data['Short Signal'] = (rsi > rsi_high) & (rsi.shift(1) <= rsi_high)  # Enter short on crossover from above
+    
+    return data
+
+# Example usage:
+# Load your historical price data into a DataFrame 'price_data'
+# price_data = pd.read_csv('your_price_data.csv')
+# strategy_data = rsi_strategy(price_data)
+
+# Note: This pseudocode should be adapted to include the multiple timeframe analysis,
+# price confirmation signals, and other logic described in the strategy.
+```
+
+The code provided is a template for implementing the RSI based strategy described in the video. Depending on your source and data formatting, you may have to adjust the `"Close"` column reference, and for a complete strategy, you will also need to implement the other aspects such as multi-timeframe analysis and price action confirmations. For price data, you would typically use data from a trading API.

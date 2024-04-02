@@ -1,0 +1,37 @@
+Based on the provided transcript and the trading strategy described, we can construct a step-by-step outline of the strategy, including setup conditions, entry, stop loss, take profit, and risk management guidelines. Here's the extracted trading strategy:
+
+**Trading Strategy Overview: Trend Continuation Using Moving Averages & Fibonacci**
+1. **Setup Conditions:**
+   - Look for price action to break below the moving average, then move back up.
+   - All moving averages should be moving in the same direction, indicating a trend.
+   - Moving averages used are the 20 EMA, 50 EMA, and 200 EMA.
+   - Wait for these moving averages to cross in the order of 20 EMA, 50 EMA, then 200 EMA.
+
+2. **Entry Rule:**
+   - Use the Fibonacci retracement tool from the low to the recent high to find potential support zones.
+   - Enter trades when the price pulls back to a key Fibonacci level (0, 38.2%, and 1 level mentioned).
+
+3. **Stop Loss:**
+   - Place stop losses based on previous support/resistance zones in the chart history.
+   - The stop loss must make sense on the chart and not be a random location.
+
+4. **Take Profit:**
+   - The take profit is open-ended as part of a trend-following strategy.
+   - Let winning trades run and keep losses small.
+   - Consider taking profits when RSI indicators suggest the market could be overvalued or undervalued.
+
+5. **Risk Management:**
+   - Only risk a small percentage of the account on each trade (the example given was risking $500 to make approximately $1500, i.e., a 1:3 risk/reward ratio).
+
+6. **Using Leverage:**
+   - Leverage can be used responsibly to scale up positions, starting with a smaller amount of money.
+   - Leverage must be used while still managing risks properly.
+
+7. **Performance Tracking:**
+   - Track performance for each trade in a trade journal to ensure constant improvement and to understand the strategy's effectiveness.
+
+This strategy also emphasizes the importance of practice and proof of concept before live trading and suggests using simulated trading environments like paper trading to master one's trading strategy. Additionally, focus on one single system and track performance meticulously while managing leverage responsibly.
+
+Now, let me code an example implementation of a trading simulator for this strategy using the guidelines above and assuming we're starting with historical stock data. The markets like forex and cryptocurrency mentioned in your strategy can leveraged up to 100x, but it's commonly known that leverage increases risks substantially. We'll assume a conservative leverage for the simulator.
+
+Do you have a particular dataset (stock, forex, or cryptocurrency) that you would like to use for simulating this strategy? If not, I will demonstrate using a sample historical stock dataset.

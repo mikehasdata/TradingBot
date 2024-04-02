@@ -1,0 +1,17 @@
+Based on the YouTube transcript you've provided, the "ELITE" trading strategy involves four key components:
+
+1. **Environment (E)** - Understanding the market structure and recognizing the different states a market can be in:
+   - Trending
+   - Ranging
+   - Breakout
+   - Reversal
+ 
+2. **Levels (L)** - Identifying key levels of support and resistance where the market may react.
+
+3. **Entries (E)** - Determining the appropriate entry points based on price action and patterns, such as rejection bars, bullish/bearish bars, or double tops/bottoms at the identified levels.
+
+4. **Exits (E)** - Establishing clear exit points where it makes sense to take profits or cut losses, such as at swing highs, supply/demand levels, or the ultimate high of a trend.
+
+This strategy involves a process of constant evaluation of market conditions and adjusting as the market transitions between different states. It is not a strict set of rules, but a dynamic approach to trading that requires ongoing analysis and decision-making. To create a quantitative trading strategy based on these concepts, you would need to further specify the rules, define how exactly the market states are identified, set the criteria for entries and exits, and back-test the strategy to evaluate its effectiveness.
+
+Would you like to proceed with creating this strategy programmatically? If so, we'll have to break down each component and develop ways to quantify them through indicators and price patterns. Please let me know, and we can start coding and back-testing the strategy step by step.

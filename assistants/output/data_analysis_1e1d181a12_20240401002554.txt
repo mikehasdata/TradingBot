@@ -1,0 +1,24 @@
+Based on the transcript, here is the momentum trading strategy using the Williams %R indicator:
+
+**Buy Rules:**
+1. **Define the Uptrend:** An uptrend is characterized by a series of higher highs and higher lows.
+2. **Candlestick Confirmation:** Look for bold bullish candlesticks that close near the high end of the candlestick to confirm a strong upward momentum.
+3. **Williams %R Indicator:** Wait for the Williams %R to show oversold conditions (below -70) and then rally back above the -50 level before initiating a buy.
+4. **Protective Stop Loss:** Place the stop loss below the most recent higher low.
+5. **Take Profit:** Look for a break below the most recent higher low or when the Williams %R breaks below the -50 level to exit the trade.
+
+**Sell Rules:**
+1. **Define the Downtrend:** A downtrend is characterized by a series of lower highs and lower lows.
+2. **Candlestick Confirmation:** Look for bold bearish candlesticks that close near the low end of the candlestick to confirm a strong downward momentum.
+3. **Williams %R Indicator:** In a downtrend, sell after the Williams %R reaches overbought conditions (above -30) and then drops back below the -50 level.
+4. **Protective Stop Loss:** Place the stop loss above the most recent lower high.
+5. **Take Profit:** Look for a break above the most recent lower high or when the Williams %R indicator breaks above the -50 level to exit the trade.
+
+**Implementation Steps:**
+- Use a charting software that allows the use of the Williams %R indicator.
+- Set the Williams %R period as recommended to 14 periods.
+- Scan for an asset that is in a clear uptrend or downtrend.
+- Apply the buy or sell rules as applicable.
+- Manage risk carefully by adhering to stop loss and take profit rules.
+
+Let's implement this strategy in Python. I'll need some historical price data to demonstrate the strategy. Would you like me to use data from a particular asset or just choose a random one for demonstration purposes?

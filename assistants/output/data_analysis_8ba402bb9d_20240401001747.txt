@@ -1,0 +1,50 @@
+Based on the given transcript, we can outline a momentum trading strategy as follows:
+
+### Momentum Day Trading Strategy
+
+#### Definition of Momentum Trading:
+- A momentum stock is one that is moving quickly.
+- Momentum traders do not attempt to predict what a stock will do but trade based on actual movements.
+
+#### Entry and Exit Strategy:
+1. **Use of Scanners**: Momentum traders use scanners to identify stocks that are starting to move or breakout from their normal range.
+
+2. **News and Fundamental Analysis**: Check for any breaking news or fundamental changes for the stock that is moving. This could be a catalyst for the movement.
+
+3. **Entry Points**:
+    - Buy at market open if the stock is showing strong pre-market movement (e.g., after 4 AM but particularly around 7 AM when certain brokerages come online).
+    - Look for breakouts through resistance levels or pullback entries for getting into a position.
+    - The first clean entry is often at a technical break or when you observe thinning out of sellers at a resistance level on the Level 2 data.
+    - Look for retests of breakout levels for potential entries if you missed the initial move.
+    
+4. **Exit Points**:
+    - Set profit targets based on previous resistance levels or a percentage move.
+    - Keep an eye on stock momentum and volume to determine when the move is losing steam and it might be time to exit.
+
+5. **Risk Management**:
+   - Using stop-loss orders to manage downside risk.
+   - Understanding that trading momentum can be very volatile.
+   - Smaller position sizes to manage the risk when trading very volatile stocks.
+   - Short trade duration to reduce exposure.
+
+#### Specific Tactics Mentioned:
+- **Buying High and Selling Higher**: Accepting the counterintuitive process of buying stocks that have already seen a significant increase.
+
+- **Day Trading vs. Swing Trading**: This strategy is primarily for day trading, capitalizing on intraday price movements.
+
+#### Criteria for Momentum Trading (not listed in detail, but mentioned in the transcript):
+- There are five criteria used to evaluate whether a stock has the potential to make substantial moves (20%, 30%, 40%, etc.), not detailed in the transcript, but can be learned in the provided classes by the speaker.
+
+#### Case Study and Example Entries:
+- For an example stock MSGM, the presenter provides actual trades and discusses their winners and losers, emphasizing a good profit/loss ratio and accuracy.
+
+- They also mention micro pullback and small account strategies.
+
+### Steps to Implement the Strategy:
+1. Develop or obtain access to a real-time stock scanner that can identify stocks making significant intraday moves.
+2. Configure the scanner to flag stocks with high percentage premarket moves or ones breaking through resistance levels.
+3. Monitor news feeds for potential catalysts that could drive stock movement.
+4. Execute trades while closely watching technical indicators, Level 2 data, and maintaining discipline in risk management.
+5. Continuously evaluate and improve the strategy based on trade outcomes, learning from both successful and unsuccessful trades.
+
+Let me know if you want to proceed with coding this strategy in Python, keeping in mind the complexity and subtlety involved in real-world trading applications and the importance of risk management.

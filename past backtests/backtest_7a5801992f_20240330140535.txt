@@ -1,0 +1,70 @@
+To perform a backtest using backtesting.py, we need historical stock data, which you mentioned is located at `/Users/micahdemarest/Desktop/coding/sniper_bot/historical data/BTC-USD-15m-2023-1-01T00_00 (1).csv`. However, since we don't have access to that specific file path in our environment, we can pretend that we have loaded the data from that path using pandas and then continue with setting up the backtest using backtesting.py.
+
+First, we'll need to install and import necessary modules `backtesting` and `pandas`. If `backtesting` is not already installed in this environment, please let me know, and I will proceed with the pseudo-code instead of running it.
+
+Let's start by assuming we have the historical data loaded into a DataFrame and set up the strategy as a class that inherits from `backtesting.Strategy`.
+
+```python
+from backtesting import Backtest, Strategy
+from backtesting.lib import crossover
+import pandas as pd
+
+# Load data (assuming CSV file contains 'Open', 'High', 'Low', 'Close', 'Volume' columns)
+df = pd.read_csv('/Users/micahdemarest/Desktop/coding/sniper_bot/historical data/BTC-USD-15m-2023-1-01T00_00 (1).csv', index_col=0, parse_dates=True)
+
+class BreakoutStrategy(Strategy):
+    # Define the two simple moving averages
+    n1 = 10
+    n2 = 20
+
+    def init(self):
+        # Moving averages
+        self.sma1 = self.I(pd.Series.rolling, self.data.Close, self.n1).mean()
+        self.sma2 = self.I(pd.Series.rolling, self.data.Close, self.n2).mean()
+
+        # Other variables to manage trade entries and exits
+        self.entry_price = 0
+        self.stop_loss = 0
+        self.breakout_candle = None
+
+    def next(self):
+        # Wait for a consolidation period between 2 weeks and 2 months
+        consolidation_period = self.data.index[-1] - self.breakout_candle.index[0] if self.breakout_candle is not None else None
+        if consolidation_period is not None and 14 <= consolidation_period.days <= 60:
+
+            # Identify a breakout candle
+            if self.data.Close[-1] > self.breakout_candle.High[-1]:
+                self.entry_price = self.data.Close[-1]
+                self.stop_loss = self.breakout_candle.Low[-1]
+
+                # Enter trade
+                self.buy()
+
+        # Manage the trade after entry
+        if self.position:
+            # Sell a third of the position after 3-5 days
+            if 3 <= (self.data.index[-1] - self.position.entry_time).days <= 5:
+                self.position.close(1/3)
+            
+            # Adjust stop loss
+            self.position.sl = max(self.entry_price, self.sma2[-1])
+
+            # Exit if the body of the candle breaks below the 20-day SMA
+            if self.data.Close[-1] < self.sma2[-1]:
+                self.position.close()
+
+# Instantiate and run the backtest
+bt = Backtest(df, BreakoutStrategy,
+              cash=100000, commission=.002,
+              exclusive_orders=True)
+
+stats = bt.run()
+print(stats)
+
+# To plot the backtesting results
+# bt.plot()
+```
+
+Please note that the above code is a template and leaves out important aspects of the strategy such as proper consolidation period identification, partial position management, and accurate handling of trading days. It also assumes that `backtesting.py` expects data with a DateTimeIndex and OHLC columns (`Open`, `High`, `Low`, `Close`, `Volume`).
+
+In a live coding environment, you would need to adjust the script according to the actual format and content of your data file, as well as handle position sizing and the partial sale of the position according to the strategy details. This demonstration is meant to give you a starting point for building a backtest with the described strategy.

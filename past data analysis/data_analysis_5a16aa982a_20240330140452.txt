@@ -1,0 +1,27 @@
+Based on the YouTube transcript provided, the trading strategy consists of the following five-step process:
+
+### Step 1: Stock Selection
+- Find stocks with a strong move to the upside, specifically a move that's between 30% and 100% in the last 3 months.
+
+### Step 2: Adding Indicators
+- Add two simple moving averages (SMA) with lengths of 10 and 20 to the chart.
+- Look for stocks that are consolidating around these moving averages for a period between 2 weeks and 2 months.
+
+### Step 3: Breakout Identification
+- Identify a candle that breaks the resistance of the consolidation period.
+
+### Step 4: Entry and Initial Exit
+- Enter the trade on a higher timeframe (daily) as soon as the candle breaks the resistance.
+- Set a stop loss just below the low of the daily candle that caused the breakout.
+- After 3 to 5 days, sell a third of the position for a guaranteed profit.
+
+### Step 5: Trailing Stop Loss and Final Exit
+- After selling a third of the position, move the stop loss to the entry point to ensure no loss on the trade.
+- Use the 20-day SMA as a trailing stop loss.
+- Sell the remaining position only when the body of the candle fully breaks below the 20-day SMA.
+
+Now, let's use Python to create a very simplistic code framework that would implement the basic aspects of this strategy. It's important to note that actual trading involves more complexities including but not limited to transaction costs, slippage, market impact, and risk management considerations that aren't captured in this simple strategy explainer. Moreover, the transcript doesn't explicitly mention which financial instruments or stock exchanges to consider, therefore, adjustments would be necessary to execute this strategy in a live trading environment. 
+
+We'll need to download some historical stock data to test this strategy. However, since downloading data or accessing external APIs isn't possible because of the restrictions of this environment, we would typically use APIs like Alpha Vantage, Yahoo Finance, or a similar service to download historical stock data for our analysis.
+
+Let's implement a simplified version of the strategy framework in Python assuming we've obtained the appropriate stock data.

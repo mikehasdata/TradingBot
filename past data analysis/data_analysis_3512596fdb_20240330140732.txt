@@ -1,0 +1,23 @@
+Based on the provided YouTube transcript, the trading strategy can be summarized as follows:
+
+1. Use a breakout swing trading strategy ideally on a daily timeframe.
+2. Look for stocks that have made a significant bullish move, ideally between 30 to 100 percent, over a period of one to three months.
+3. After the bullish move, wait for the stock to pull back and consolidate for two weeks to two months. During this period, the stock's price should find support between one of the three moving averages.
+4. Enter a long trade when the price starts breaking out of the consolidation phase.
+5. Place the initial stop loss at the low of the day of the breakout candle.
+6. For risk management:
+    - Never hold more than 30% of a position overnight.
+    - Position size should be between 10 to 25% of the account size.
+    - Risk per position should be between 0.25 to 1 percent, but it can be between 0.5 to 1.5 percent for smaller account sizes.
+7. Sell a third or half of the position three to five days after entering the trade.
+8. Move the stop loss to break even after selling part of the position.
+9. Trail the stop loss according to the 10-day or 20-day moving average, depending on the price volatility.
+10. Exit the rest of the position when the price closes below the 20-day moving average (EMA).
+
+Now let's translate this into a trading strategy with Python code. We will:
+
+- Calculate the 10-day, 20-day, and 50-day exponential moving averages (EMA) for a given stock.
+- Identify the breakout points after a consolidation phase.
+- Define entry and exit points for the trade as advised.
+
+Would you like me to demonstrate this strategy with a specific stock or use historical data to illustrate the approach? Also, should this be backtested to evaluate its historical performance?

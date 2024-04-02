@@ -1,0 +1,51 @@
+Based on the provided transcript of a YouTube video about the trading strategy of a millionaire trader named Christian Kalamji, we can outline a trading strategy as follows:
+
+1. **Risk Management:** 
+    - For accounts under $100,000, risk between 0.5% and 1.5% per trade.
+    - For accounts over $100,000, risk between 0.25% and 1% per trade.
+
+2. **Strategy Overview:**
+    - The strategy focuses on breakout trades.
+    - Look for price consolidations within a range for a period of 2 weeks to 2 months.
+    - Trade on a one-day timeframe.
+    - Identify trends that have been ongoing for 1 to 3 months with at least 30% growth.
+    - In some cases, seek trends that show over 100% growth in less than 3 months.
+
+3. **Entry Conditions:**
+    - Wait for a strong trend followed by a pullback and consolidation within a range.
+    - Ensure the price does not drop below the 50-period SMA during consolidation, preferably staying above the 10-period or 20-period SMA.
+
+4. **Trade Execution:**
+    - Execute a long position when the price breaks out of the consolidation range to the upside.
+    - Place a stop loss at the bottom of the breakout candle.
+
+5. **Partial Profit Taking:**
+    - After three days from taking the trade, take partial profits (one-third to half of the position).
+    - Move the stop loss to break even.
+
+6. **Exit Conditions:**
+    - The exit signal is when the price crosses below the SMA that it respected during the initial trend.
+    - If it respected the 10-period SMA, exit when the price crosses below this SMA.
+    - If it respected the 20-period SMA, exit when the price crosses below this SMA.
+    - If it respected the 50-period SMA, exit when the price crosses below this SMA.
+
+7. **Indicators Used:**
+    - `10 in 1 Different Moving Averages` created by Himanshu with these settings:
+        - 10-period SMA in red.
+        - 20-period SMA in light blue.
+        - 50-period SMA in yellow.
+    - Trading volume indicator created by TradingView.
+
+8. **Auxiliary Information:**
+    - The video provides examples with Bitcoin and a stock called Axon.
+    - It mentions the importance of strong and voluminous breakouts indicating bullish momentum.
+
+To package this into a trading strategy algorithm, we would need to implement the following steps programmatically:
+
+1. Import the historical price data for a selected asset.
+2. Calculate the 10-period, 20-period, and 50-period simple moving averages for the asset.
+3. Scan the historical data to identify periods of consolidation and breakout.
+4. Implement money management rules based on account size.
+5. Implement trade entry, partial profit taking, and exit conditions.
+
+Would you like to proceed with implementing this strategy step-by-step with the Python code?

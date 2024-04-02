@@ -1,0 +1,30 @@
+Based on the transcript you've provided, here is a trading strategy that uses moving averages as described in the video:
+
+## Strategy Overview:
+- Use three moving averages (MAs): the 20-day MA, the 50-day MA, and the 200-day MA.
+- The 20-day MA is used to gauge short-term price trends and is often referred to as a short-term indicator.
+- The 50-day MA gives a more medium-term view of the market trends.
+- The 200-day MA is considered a long-term trend indicator.
+- Green is suggested for the 20-day MA, red for the 50-day MA, and light blue for the 200-day MA.
+
+## Strategy Rules:
+
+### For Long (Buy) Signals:
+1. If the price is above both the 50-day and 200-day MAs, it suggests a bullish trend.
+2. The 20-day MA serves as a short-term support level. Look for the price to bounce off the 20-day MA to confirm bullish momentum.
+3. A "Golden Cross" occurs when the 50-day MA crosses above the 200-day MA, which may signal a strong long-term bullish trend.
+4. If the price drops to the 20-day MA but does not close below it, consider it an opportunity to buy on dips.
+5. Wait for the price to break above resistance (previously defined by the MAs) before making a purchase.
+
+### For Short (Sell) Signal or Exiting a Long Position:
+1. If the price falls below the 20-day MA and starts using it as resistance, it could indicate a weakening bullish trend or the start of a bearish trend.
+2. When the price is below both the 50-day and 200-day MAs, it could signal a bearish trend.
+3. A "Death Cross" occurs when the 50-day MA crosses below the 200-day MA, signaling a potential long-term bearish trend.
+4. If the price breaks below the 50-day or 200-day MA and fails to regain it, consider taking profits or cutting losses.
+
+## Strategy Execution:
+You can implement this strategy using a trading platform that allows for technical analysis, such as TradingView, which was mentioned in the transcript. You’d apply the MAs to your price charts, monitor for the trading signals, and execute trades according to the rules provided above.
+
+To enforce a structured approach, always set stop-loss levels to manage risk and take profit at predetermined points or when the price action suggests a trend is weakening.
+
+Do you want to create a Python code snippet that implements this strategy with hypothetical data or performs backtesting to measure its effectiveness?

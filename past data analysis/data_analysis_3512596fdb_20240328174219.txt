@@ -1,0 +1,23 @@
+Based on the provided YouTube transcript, the trading strategy can be summarized and implemented as follows:
+
+1. **Environment (E):** Identify the market state which can be trending, ranging, breakout, or reversal.
+
+    - **Trending:** The market is consistently moving in one clear direction with or without deep pullbacks.
+    - **Ranging:** The market is moving sideways, not making new highs or lows.
+    - **Breakout:** The market is breaking out of a range or a pattern.
+    - **Reversal:** The market is shifting from an uptrend to a downtrend or vice versa.
+
+2. **Levels (L):** Determine support and resistance levels or patterns such as trend lines, supply/demand zones, and potential reversal patterns like head and shoulders.
+
+3. **Entries (E):** Establish criteria for entering a trade, such as bullish/bearish rejection bars or strong momentum bars at the identified levels.
+
+4. **Exits (E):** Set rules for taking profit, such as exiting near previous swing highs/lows, at supply/demand levels, or using a specific risk-reward ratio.
+
+To apply this strategy algorithmically, we need to write code to:
+
+- Determine the market state using technical indicators (e.g., moving averages for trends, Bollinger Bands for ranges, volume or price action for breakouts/reversals).
+- Identify significant levels using price action and technical analysis tools.
+- Set entry conditions based on the market state and reactions at these levels.
+- Define exit strategies, such as using a trailing stop or targeting specific price levels.
+
+Would you like to proceed with coding this strategy, and if so, on which asset or financial instrument should we focus?

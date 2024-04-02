@@ -1,0 +1,30 @@
+Based on the YouTube transcript, here's a breakdown of the trading strategy for scalping on the 5-minute timeframe:
+
+1. **Use Heikin-Ashi candles** instead of traditional candlesticks for charting on TradingView.
+2. **Add indicators:**
+   - **Chandelier Exit** (by Everget)
+     - Modify the ATR period to `1`.
+     - Change the ATR multiplier to `2`.
+     - Leave only the buy and sell labels checked in styles.
+     - Adjust the buy label to display below the bar and the sell label above the bar for better visibility.
+   - **Zero Lag SMA** (by Verified)
+     - Set the length to `50`.
+     - Change the line color to white for better visibility.
+3. **Entry Rules:**
+   - For a long position:
+     - Wait for a buy signal from the Chandelier Exit.
+     - Confirm the price action is above the white Zero Lag SMA line.
+     - Set a stop loss below the swing low.
+   - For a short position:
+     - Wait for a sell signal from the Chandelier Exit.
+     - Confirm the price action is below the white Zero Lag SMA line.
+     - Set a stop loss above the swing high.
+4. **Exit/Take Profit Rules:**
+   - Close the trade when the price action crosses the Zero Lag SMA line (for both long and short positions).
+
+Additionally, it mentions:
+
+- **No specific risk to reward ratio** as the market can sometimes make big moves, and the strategy aims to capitalize on these.
+- **Setting alerts for buy and sell signals** so that you do not have to watch the charts all day long.
+
+Given the instructions, let's create a simple trading strategy based on the above strategy. This Python script won't be able to set up actual trades or real-time market alerts, but it can simulate the strategy presented. Would you like to proceed with the simulation code, and if desired, which financial instrument (like Forex, a particular stock, crypto, etc.) would you like to apply this trading strategy to for demonstration?

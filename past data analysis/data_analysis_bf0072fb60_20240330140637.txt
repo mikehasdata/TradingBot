@@ -1,0 +1,41 @@
+The trading strategy presented in the YouTube video you mentioned is called the "Break and Retest" strategy. Here is a summarized version of the strategy for implementation:
+
+1. **Initial Account Size**: Start with a $1,000 account.
+
+2. **Risk Management**: Risk 10% of the account size per trade ($100).
+
+3. **Leverage**: The use of margin or leverage may be necessary for some trades.
+
+4. **Trade Entry**: Look for break and retest setups, where a significant level (such as a round number like 390 in the example given) is broken and then retested.
+
+5. **Trade Direction**:
+   - For a long position, enter when the asset retests the breakout level as a new support.
+   - For a short position, enter when the asset retests the breakdown level as a new resistance.
+
+6. **Stop Loss**: Place the stop loss at a break of market structure that is significant (e.g., 390.36 in the SPY example).
+
+7. **Profit Target**:
+   - For long trades, target the high of the day.
+   - For short trades, target the low of the day.
+
+8. **Risk-Reward Ratio**: Aim for high risk-reward trades, like the 4.27 ratio mentioned in the example (risk $100 to potentially make $427).
+
+9. **Trade Frequency**: Limit trades to one to two high-quality setups per day, preferring A+ setups.
+
+10. **Discipline and Patience**: Stick to the strategy without succumbing to FOMO (fear of missing out) and maintain strict discipline with entry points and risk management.
+
+11. **Profit and Loss (P&L)**: With each trade, add or subtract the P&L to/from the account balance.
+
+Based on the strategy, here are the key components that we need to execute the Break and Retest strategy in Python:
+- A method to identify significant levels (psychological levels, high/low of day, etc.).
+- A method to identify break and retest patterns.
+- A risk management function to keep trades within the set risk tolerance.
+- A trade execution function that considers the entry, stop loss, and profit target.
+
+The strategy seems to be discretionary in nature, meaning it requires visual confirmation and human judgment to enter trades. Therefore, it may be challenging to fully automate the strategy without incorporating complex technical analysis and machine learning algorithms that can mimic such discretionary decision-making.
+
+Next steps would involve acquiring historical data for backtesting, developing the functions to identify the trade setups following the strategy rules, and then executing trades on historical data to see how the strategy would have performed in the past.
+
+Since this strategy is based on short-term intraday patterns and relies on a lot of discretion and interpretation of the market structure, automation would require an advanced understanding of technical patterns and possibly machine learning for pattern recognition.
+
+If you want to proceed with developing a simple algorithmic version of this strategy (with the understanding that it won't have the same level of discretion as a human trader), let me know and I can assist you in creating a basic backtesting framework.

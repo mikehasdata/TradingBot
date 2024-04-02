@@ -1,0 +1,20 @@
+Based on the provided YouTube transcript, the trading strategy of Takashi Kotegawa, who is famously known for turning $13,000 into $153 million as an intraday trader, can be summarized and implemented as follows:
+
+### Strategy Summary:
+1. **Market Condition**: Kotegawa preferred bear markets but adapted his strategy to bull markets as well.
+2. **Stock Selection**: He looked for stocks that were in a long-term downtrend, specifically stocks at least 20% below their 25-day moving average, with 35% being a safer level to buy.
+3. **Average Holding Period**: On average, he held positions for 2 to 6 days, potentially up to a week or two depending on market conditions.
+4. **Sector Volatility**: The sensitivity of the rebound levels vary; tech and biotech are more volatile than utilities and consumer staples.
+5. **Finding Stocks**: Use a screener with criteria such as price change percentage below -20%, price above $1, and below the 20 EMA by 20%.
+6. **Ignore Sharp Drops**: Disregard penny stocks or any stocks with sharp downward movements; prefer gradual downtrends.
+7. **Market Sentiment**: Check broad market sentiment, e.g., by analyzing the SP500 or sector-specific ETFs like XLK for tech stocks.
+8. **Indicators**: Use EMA (25 period), RSI, and MACD. Monitor the price gap to the EMA and wait for larger gaps in bear markets and smaller ones in bull markets.
+9. **Support & Resistance**: Identify strong levels on a larger time frame like the 4-hour or daily.
+10. **Entry Criteria**: Wait for the price to reach a major support level and show signs of a bounce with RSI in the oversold area.
+11. **Confirmation**: On the 15-minute time frame, look for the price to start bouncing with the EMA, MACD turning bullish, and an overall uptrend forming.
+12. **Dynamic Take Profit/Stop Loss**: Place take profit at the next highest resistance and stop loss below the current low.
+
+### Implementation:
+Now, let's implement this strategy in a Python environment. We'll use historical data to identify stocks that meet these criteria and execute paper trades based on the conditions described above. We'll need historical stock prices and technical indicators for this purpose.
+
+Can you provide me with a dataset of stock prices or specify a particular stock symbol that you would like to analyze using this strategy? Once I have this information, we can write and execute the code.

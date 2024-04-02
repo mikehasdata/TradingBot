@@ -1,0 +1,17 @@
+Based on the Youtube transcript you've provided, it seems that Richard Dennis's trading strategy emphasizes trend following with strict discipline and risk management rules. Here is a summary of the strategy outlined in the transcript:
+
+1. **The Survival Rule**: Use a stop loss to prevent large losses. Never risk more than 2% of your account equity on any one trade.
+
+2. **Trend Following**: Trade with the trend by using technical indicators like moving averages and momentum to identify and follow the trend until it reverses.
+
+3. **Cut Losses Short and Let Profits Run**: Exit losing trades quickly and allow profitable trades to continue running to capture larger gains.
+
+4. **Swallow Your Ego**: Maintain discipline, avoid letting emotions drive decisions, and accept losses when necessary.
+
+5. **Use Price Action**: Observe the market without bias and wait for clear trading opportunities. Use technical analysis and price action to determine entries and exits.
+
+Now, let's create a simple Python-based trading strategy that encompasses these rules. Please note that the rules related to psychology and discipline cannot be programmed into an algorithm, so our focus will be on implementing the quantifiable aspects of the strategy.
+
+For our example, we'll assume we are trading a single stock and use a simple moving average as our trend indicator, a fixed percentage of account equity as our risk per trade to set stop loss levels, and a trailing stop to let profits run. We will not cover the full complexity of an actual trading system, which would need to include brokerage API integration, slippage, fees, and many other factors.
+
+Since we can't actually place trades or access real-time market data, we will simulate a strategy on historical price data. Shall we proceed with coding this trading strategy simulation?

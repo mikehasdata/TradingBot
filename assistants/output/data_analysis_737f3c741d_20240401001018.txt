@@ -1,0 +1,31 @@
+Alright, from the provided transcript, I've derived the swing trading strategy that includes the following elements:
+
+1. **Timeframes**: Weekly, Daily, 4-Hour, with entries primarily based on the 4-Hour chart.
+
+2. **High Time Frame Analysis**: 
+   - Determine the overall trend using Weekly and Daily charts.
+   - Identify areas of Supply (for downtrends) or Demand (for uptrends) that caused significant structural shifts and left behind an imbalance or a fair value gap.
+
+3. **Entry Criteria**:
+   - Look for a corrective retracement back into the zone that caused the significant move.
+   - Set a pending order in the Supply or Demand zone that initiated the big price move.
+   - Place a stop loss just above or below the recent high or low (against the direction of entry).
+   - Target the opposing liquidity or zone for profit-taking.
+   - Consider partial or full exit at significant levels or liquidity pools.
+
+4. **Risk Management**:
+   - If the position goes into a 2% profit, roll the stop loss up to lock in that 2% gain.
+   - Take profit is ideally set for more than a 1 to 2 risk to reward ratio.
+
+Let's summarize and translate this strategy into actionable steps:
+
+1. Use the Weekly chart to identify the overall trend and look for significant Supply or Demand zones.
+2. Confirm the trend and structural shifts on the Daily chart.
+3. Go to the 4-Hour chart to pinpoint the precise entry within the Supply or Demand zone during a retracement.
+4. Set a pending order with the appropriate stop loss and take profit levels.
+5. If in profit, adjust the stop loss to ensure a minimum of 2% gain.
+6. Monitor the position for additional exit points based on emergent liquidity pools or opposing zones.
+
+The video transcript mentions specific examples that illustrate the application of the strategy, including trades on AUD/CAD, GBP/AUD, and others.
+
+Would you like me to code a simplified version of this strategy for backtesting or further analysis? Please note that the implementation will be based on general principles, as specific details like the exact definitions of `imbalance` or `fair value gap` might require discretionary judgement.

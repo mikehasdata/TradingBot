@@ -1,0 +1,31 @@
+Based on the transcript you've provided, here is a summary of Linda's MACD-based trading strategy, which she calls the "anti-setup":
+
+1. Change the MACD settings:
+   - Fast Length: 3
+   - Slow Length: 10
+   - MACD Length: 16
+   - Remove the histogram
+   - Set the average type to 'simple'
+
+2. Color code:
+   - MACD Line (Fast): Red
+   - Signal Line (Slow): Yellow
+
+3. Strategy rules for entering a long trade:
+   - First Rule: The MACD line (Red) must make a new high above the previous high.
+   - Second Rule: The Signal line (Yellow) must be sloping upwards.
+   - Third Rule: The MACD line (Red) must revert back towards the Signal line (Yellow) indicating hesitation or buying power in the market.
+
+4. Once the criteria are met:
+   - Enter the trade when MACD and Signal lines start to head in opposite directions after the MACD line has reverted back to the Signal line.
+
+5. Stop loss and Take profit:
+   - Place a stop loss below the recent low of the move.
+   - Place a take profit at the previous high of the move.
+   
+6. The strategy applies to both long and short entries:
+   - For short trades, look for the MACD line to make a new low, and the Signal line to slope downwards, then wait for the MACD line to revert back towards the Signal line and begin heading in opposite directions.
+
+7. This strategy is applicable to all markets and time frames.
+
+Now let's implement this strategy with Python to identify potential long entry points. We will use historical data to demonstrate the strategy and will assume the data has 1-hour candlesticks (open, high, low, close prices). We will also assume that the historical data is stored in a Pandas DataFrame called `df`. We'll start by setting up the MACD indicator using the specified parameters and then identify potential buy signals following the strategy rules. Please provide me with the dataset or direct me to a source to retrieve the data to proceed.

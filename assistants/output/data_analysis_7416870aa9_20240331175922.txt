@@ -1,0 +1,56 @@
+Based on the transcript provided, the trading strategy inspired by Takashi Kodagawa can be summarized and coded as follows:
+
+1. Look for stocks in a long-term downtrend, at least 20% below the 25-day EMA, with 35% being a safer level to buy.
+
+2. Trades last on average two to six days, but sometimes can extend to a week or two depending on market volatility.
+
+3. Use a stock's sector volatility to adjust the buy threshold — larger gaps for more volatile sectors (e.g., tech and biotech) and smaller gaps for less volatile sectors (e.g., utilities and consumer staples).
+
+4. Combine market sentiment analysis with sector-specific sentiment to fine-tune the entry point.
+
+5. Utilize support and resistance levels, the Relative Strength Index (RSI), and the Moving Average Convergence Divergence (MACD) for additional confirmation of the entry point.
+
+To code this strategy, we will create a Python script that does the following:
+
+1. Utilizes a stock screener to filter for stocks that meet the initial criteria (long-term downtrend, specific % below EMA).
+
+2. Analyzes the stocks further for gradual downtrends versus sharp movements.
+
+3. Incorporates market sentiment readings and adjusts the strategy accordingly.
+
+4. Marks strong support and resistance levels on the charts.
+
+5. Waits for the price to hit a support level combined with RSI being in the oversold area and confirms the trend reversal on a 15-minute chart with EMA, RSI, and MACD.
+
+6. Enters trades and manages them with dynamic take profits and stop losses based on market conditions.
+
+For the sake of brevity, we can start by coding the screener part of the strategy to find stocks that are at least 20% below their 25-day EMA:
+
+```python
+import yfinance as yf
+import pandas as pd
+
+# Define a function to screen for stocks.
+def screener(stock_list):
+    screened_stocks = {}
+    for stock in stock_list:
+        df = yf.download(stock, period="60d", interval="1d")
+        df['25d_EMA'] = df['Close'].ewm(span=25, adjust=False).mean()
+        current_price = df['Close'].iloc[-1]
+        price_25d_EMA = df['25d_EMA'].iloc[-1]
+        percent_below_25d_EMA = ((current_price - price_25d_EMA) / price_25d_EMA) * 100
+
+        if percent_below_25d_EMA <= -20: # The stock is at least 20% below the 25-day EMA
+            screened_stocks[stock] = percent_below_25d_EMA
+
+    return screened_stocks
+
+# Example usage with a list of stock symbols.
+stocks_to_screen = ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'TSLA'] # This is an example list.
+screened_results = screener(stocks_to_screen)
+screened_results
+```
+
+However, to fully implement the strategy, we need access to real-time market sentiment data and an algorithm for marking support and resistance levels, which could involve more complex programming and APIs not available in this environment. Moreover, trading strategies need to be backtested to ensure their effectiveness before using them with real money. 
+
+Now, I will execute the first part of the script that screens stocks based on the 25-day EMA condition. Please provide me with a list of stock symbols to screen, or confirm if you'd like me to proceed with the example list provided in the script.
